@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <title>Obdelník</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="jumbotron bg-success text-center">
+        <h1 class=" text-white display-3">Obdelník</h1>
+    </header>
+    <main class="container">
+        <h2 class="bg-secondary text-center text-white text-uppercase p-3">Výpočty</h2>
+        <div class="container">
+            <div class="container">
+                <form>
+                    <div class="form-group row">
+                        <label for="sidea" class="col-sm-3 col-form-label">Strana A</label>
+                        <div class="col-sm-6">
+                            <input type="number" class="form-control" name="sidea" id="sidea" value="10">
+                        </div>
+                        <div class="col-sm-3">
+                            <select class="form-control" name="aunit" id="aunit">
+                                <option value="mm">mm</option>
+                                <option value="cm">cm</option>
+                                <option value="dm">dm</option>
+                                <option value="m" selected>m</option>
+                              </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="sideb" class="col-sm-3 col-form-label">Strana B</label>
+                        <div class="col-sm-6">
+                            <input type="number" class="form-control" name="sideb" id="sideb" value="10">
+                        </div>
+                        <div class="col-sm-3">
+                            <select class="form-control" name="bunit" id="bunit">
+                                <option value="mm">mm</option>
+                                <option value="cm">cm</option>
+                                <option value="dm">dm</option>
+                                <option value="m" selected>m</option>
+                              </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="sidec" class="col-sm-3 col-form-label">Strana C</label>
+                        <div class="col-sm-6">
+                            <input type="number" class="form-control" name="sidec" id="sidec" value="0">
+                        </div>
+                        <div class="col-sm-3">
+                            <select class="form-control" name="cunit" id="cunit">
+                              <option value="mm">mm</option>
+                              <option value="cm">cm</option>
+                              <option value="dm">dm</option>
+                              <option value="m" selected>m</option>
+                            </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="type" class="col-sm-3 col-form-label">Vyberte typ výpočtu</label>
+                        <div class="col-sm-9">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="type" id="tcirc" value="circ" checked> Obvod
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="type" id="tcont" value="cont"> Obsah
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="type" id="tvol" value="vol"> Objem
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="offset-sm-2 col-sm-10">
+                            <button type="button" class="btn btn-success" id="calc">Výpočet</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="display-4" id="result">Výsledek</div>
+    </main>
+    <footer class="container-fluid">
+        <hr>
+        <div>&copy; 2021 - IT4</div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
